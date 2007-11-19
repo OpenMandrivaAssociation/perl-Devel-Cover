@@ -1,7 +1,7 @@
 %define module  Devel-Cover
 %define name    perl-%{module}
 %define version 0.63
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name:           %{name}
 Version:        %{version}
@@ -18,30 +18,11 @@ BuildRequires:  perl(Template)
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
-This module provides code coverage metrics for Perl.
-
-If you can't guess by the version number this is an alpha release.
-
-Code coverage data are collected using a pluggable runops function which counts
-how many times each op is executed. These data are then mapped back to reality
-using the B compiler modules. There is also a statement profiling facility
-which needs a better backend to be really useful.
-
-The cover program can be used to generate coverage reports.
-
-Statement, branch, condition, subroutine, pod and time coverage information is
-reported. Statement coverage data should be reasonable, although there may be
-some statements which are not reported. Branch and condition coverage data
-should be mostly accurate too, although not always what one might initially
-expect. Subroutine coverage should be as accurate as statement coverage. Pod
-coverage comes from Pod::Coverage. Coverage data for path coverage are not yet
-collected.
-
-The gcov2perl program can be used to convert gcov files to Devel::Cover
-databases.
-
-You may find that the results don't match your expectations. I would imagine
-that at least one of them is wrong.
+This module provides code coverage metrics for Perl. Code coverage metrics
+describe how thoroughly tests exercise code. By using Devel::Cover you can find
+areas of code not exercised by your tests and find out which tests to create to
+increase coverage. Code coverage can be considered as an indirect measure of
+quality.
 
 %prep
 %setup -q -n %{module}-%{version}
