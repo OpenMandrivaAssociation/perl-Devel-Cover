@@ -15,6 +15,7 @@ BuildRequires:  perl-devel
 BuildRequires:  perl(Test::Differences)
 BuildRequires:  perl(Pod::Coverage)
 BuildRequires:  perl(Template)
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This module provides code coverage metrics for Perl. Code coverage metrics
