@@ -1,7 +1,7 @@
 %define module  Devel-Cover
 %define name    perl-%{module}
 %define version 0.64
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name:           %{name}
 Version:        %{version}
