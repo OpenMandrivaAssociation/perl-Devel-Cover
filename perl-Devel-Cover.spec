@@ -1,5 +1,5 @@
 %define upstream_name    Devel-Cover
-%define upstream_version 0.64
+%define upstream_version 0.65
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,12 +9,12 @@ Summary:    Code coverage metrics for Perl
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Devel/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:    http://www.cpan.org/modules/by-module/Devel/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires:  perl-devel
 BuildRequires:  perl(Test::Differences)
 BuildRequires:  perl(Pod::Coverage)
 BuildRequires:  perl(Template)
+BuildRequires:  perl-devel
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
