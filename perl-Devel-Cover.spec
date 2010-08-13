@@ -1,9 +1,9 @@
 %define upstream_name    Devel-Cover
-%define upstream_version 0.67
+%define upstream_version 0.68
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 4
+Release:    %mkrel 1
 
 Summary:    Code coverage metrics for Perl
 License:    GPL+ or Artistic
