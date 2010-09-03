@@ -1,5 +1,5 @@
 %define upstream_name    Devel-Cover
-%define upstream_version 0.69
+%define upstream_version 0.70
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -43,7 +43,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc CHANGES README
+%doc META.yml README
 %{perl_vendorarch}/Devel
 %{perl_vendorarch}/auto/Devel
 %{_bindir}/*
