@@ -12,6 +12,7 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Devel/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(Test::Differences)
+BuildRequires:  perl(Test::Warn)
 BuildRequires:  perl(Pod::Coverage)
 BuildRequires:  perl(Template)
 BuildRequires:  perl-devel
