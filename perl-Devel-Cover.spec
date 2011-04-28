@@ -1,5 +1,5 @@
 %define upstream_name    Devel-Cover
-%define upstream_version 0.73
+%define upstream_version 0.76
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
