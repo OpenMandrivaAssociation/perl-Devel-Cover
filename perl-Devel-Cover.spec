@@ -1,15 +1,15 @@
-%define upstream_name    Devel-Cover
-%define upstream_version 0.78
+%define	modname	Devel-Cover
+%define	modver	1.00
 
-Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Name:		perl-%{modname}
+Version:	%{perl_convert_version %{modver}}
+Release:	1
 
 Summary:	Code coverage metrics for Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Devel/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		http://search.cpan.org/dist/%{modname}
+Source0:	http://www.cpan.org/modules/by-module/Devel/%{modname}-%{modver}.tar.gz
 
 BuildRequires:	perl(Test::Differences)
 BuildRequires:	perl(Test::Warn)
@@ -25,10 +25,10 @@ increase coverage. Code coverage can be considered as an indirect measure of
 quality.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{modname}-%{modver}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
