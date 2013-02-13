@@ -15,6 +15,7 @@ BuildRequires:	perl(Test::Differences)
 BuildRequires:	perl(Test::Warn)
 BuildRequires:	perl(Pod::Coverage)
 BuildRequires:	perl(Template)
+BuildRequires:	perl(JSON)
 BuildRequires:	perl-devel
 
 %description
