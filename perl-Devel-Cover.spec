@@ -16,6 +16,7 @@ BuildRequires:	perl(Test::Warn)
 BuildRequires:	perl(Pod::Coverage)
 BuildRequires:	perl(Template)
 BuildRequires:	perl(JSON)
+BuildRequires:	perl(Perl::Tidy)
 BuildRequires:	perl-devel
 
 %description
@@ -44,7 +45,6 @@ make test
 %{perl_vendorarch}/auto/Devel
 %{_bindir}/*
 %{_mandir}/*/*
-
 
 %changelog
 * Sun Jan 22 2012 Oden Eriksson <oeriksson@mandriva.com> 0.780.0-3mdv2012.0
