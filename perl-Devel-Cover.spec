@@ -1,6 +1,8 @@
 %define	modname	Devel-Cover
 %define	modver	1.00
 
+%define __noautoreq 'perl\\(Devel::Cover::Dumper\\)'
+
 Name:		perl-%{modname}
 Version:	%{perl_convert_version %{modver}}
 Release:	1
