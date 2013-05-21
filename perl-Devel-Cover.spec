@@ -5,7 +5,7 @@
 
 Name:		perl-%{modname}
 Version:	%{perl_convert_version %{modver}}
-Release:	1
+Release:	2
 
 Summary:	Code coverage metrics for Perl
 License:	GPL+ or Artistic
