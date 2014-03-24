@@ -1,5 +1,5 @@
 %define	modname	Devel-Cover
-%define modver 1.08
+%define modver 1.09
 
 %define __noautoreq 'perl\\(Devel::Cover::Dumper\\)'
 
@@ -10,7 +10,7 @@ Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Devel/Devel-Cover-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Devel/%{modname}-%{modver}.tar.gz
 BuildRequires:	perl(Test::Differences)
 BuildRequires:	perl(Test::Warn)
 BuildRequires:	perl(Pod::Coverage)
@@ -47,5 +47,6 @@ make test || /bin/true
 %{_bindir}/*
 %{_mandir}/man1/*
 %{_mandir}/man3/*
+
 
 
