@@ -1,5 +1,6 @@
 removed_sources:
   Devel-Cover-1.00.tar.gz: aa9448c0e2395a2a83747ee44a912e5d4cee2947
   Devel-Cover-1.08.tar.gz: 913f4fe683fcdda3afa1c5bd173f3ef3a0dd4d7c
-sources:
   Devel-Cover-1.09.tar.gz: 0c7f674678b9962de1d174fdb0ad195f04de48e7
+sources:
+  Devel-Cover-1.16.tar.gz: ca842045da162ca457c053b9b805b18f0ff2711f
