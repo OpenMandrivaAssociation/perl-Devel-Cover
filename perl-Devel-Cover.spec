@@ -41,7 +41,7 @@ make test || /bin/true
 %makeinstall_std
 
 %files
-%doc META.yml README
+%doc META.yml README.md
 %{perl_vendorarch}/Devel
 %{perl_vendorarch}/auto/Devel
 %{_bindir}/*
