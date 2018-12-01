@@ -1,7 +1,8 @@
 %define	modname	Devel-Cover
 %define modver 1.31
 
-%define __noautoreq 'perl\\(Devel::Cover::Dumper\\)'
+%global __provides_exclude %{?__provides_exclude:%__provides_exclude|}^perl\\(Devel::Cover::Dumper\\)$
+%global __requires_exclude %{?__requires_exclude:%__requires_exclude|}^perl\\(Devel::Cover::Dumper\\)$
 
 Summary:	Code coverage metrics for Perl
 Name:		perl-%{modname}
