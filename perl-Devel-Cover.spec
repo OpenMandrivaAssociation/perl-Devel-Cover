@@ -1,12 +1,12 @@
 %define	modname	Devel-Cover
-%define modver 1.09
+%define modver 1.31
 
 %define __noautoreq 'perl\\(Devel::Cover::Dumper\\)'
 
 Summary:	Code coverage metrics for Perl
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	9
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
