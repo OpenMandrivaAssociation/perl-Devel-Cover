@@ -11,6 +11,7 @@ License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Devel/%{modname}-%{modver}.tar.gz
+BuildRequires:	make
 BuildRequires:	perl(Test::Differences)
 BuildRequires:	perl(Test::Warn)
 BuildRequires:	perl(Pod::Coverage)
